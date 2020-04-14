@@ -10,7 +10,7 @@ use PHPUnit\Runner\BaseTestRunner;
 use PHPUnit\TextUI\ResultPrinter;
 use PHPUnit\Util\Filter;
 
-class PrettyPrinter extends ResultPrinter implements TestListener
+class PrettyPrinter extends \PHPUnit\TextUI\DefaultResultPrinter
 {
     protected $className;
     protected $previousClassName;
